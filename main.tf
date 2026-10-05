@@ -16,7 +16,8 @@ resource "aws_s3_bucket" "data" {
   tags = {
     name        = "Orbit Labs Storage"
     managedBy   = "Spacelift"
-    environment = local.env
+    environment = var.environment
+    project     = "orbit-labs"
   }
 }
 
