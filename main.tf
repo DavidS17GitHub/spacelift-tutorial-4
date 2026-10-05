@@ -18,6 +18,7 @@ resource "aws_s3_bucket" "data" {
     managedBy   = "Spacelift"
     environment = var.environment
     project     = "orbit-labs"
+    team        = "platform"
   }
 }
 
